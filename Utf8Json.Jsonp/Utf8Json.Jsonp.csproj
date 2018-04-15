@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Utf8Json.Jsonp</AssemblyName>
     <RootNamespace>Utf8Json</RootNamespace>
     <Version>1.0.0</Version>
