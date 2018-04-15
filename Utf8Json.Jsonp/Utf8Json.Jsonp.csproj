@@ -8,7 +8,7 @@
     <PackageId>Utf8Json.Jsonp</PackageId>
     <Authors>wipiano</Authors>
     <Description>Utf8Json for JSONP</Description>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/wipiano/Utf8Json.Jsonp</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Utf8Json" Version="1.3.7" />
