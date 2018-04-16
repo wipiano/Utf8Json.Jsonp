@@ -1,6 +1,6 @@
 # Utf8Json.Jsonp
 
-Fast JSONP Serializer powered by premitive API of [Utf8Json](https://github.com/neuecc/Utf8Json).
+Fast JSONP Serializer powered by primitive API of [Utf8Json](https://github.com/neuecc/Utf8Json).
 
 ## Install
 
