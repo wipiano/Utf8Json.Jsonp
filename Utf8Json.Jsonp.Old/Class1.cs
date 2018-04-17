@@ -34,16 +34,7 @@ namespace Utf8Json
 
         public static void Serialize<T>(ref JsonWriter writer, string callback, T value, IJsonFormatterResolver resolver)
         {
-            if (callback == null)
-            {
-                throw new ArgumentNullException(nameof(callback));
-            }
-
-            // write callback name to raw buffer in JsonWriter.
-            ArraySegment<byte> buffer = writer.GetBuffer();
-            var filledCount = Encoding.UTF8.GetBytes(callback, 0, callback.Length, buffer.Array, buffer.Count);
-            writer.AdvanceOffset(filledCount);
-
+            writer.WriteRaw(Encoding.UTF8.GetBytes(callback));      // write callback name
             writer.WriteRaw((byte) '(');
             
             Utf8Json.JsonSerializer.Serialize(ref writer, value, resolver);
@@ -110,7 +101,7 @@ namespace Utf8Json
             Serialize(ref writer, callback, obj, resolver);
             return writer.GetBuffer();
         }
-
+        
         // ref: Utf8Json.JsonSerializer
         private static class MemoryPool
         {
